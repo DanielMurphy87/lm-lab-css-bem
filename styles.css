@@ -1,7 +1,65 @@
-/* You can delete / re-write this img class  */
+/* ==============Dark Side================ */
 
-img {
-    max-width: 200px;
+div {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-shadow: 1px 1px 1px red;
 }
 
-/* Happy coding! */
+h2 {
+    font-size: 2rem;
+}
+
+img {
+    width: 300px;
+}
+
+p {
+    font-size: 1.5rem;
+    
+}
+
+/* =========================================== */
+
+/* ================Light Side================= */
+
+/* Base styles */
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 2rem;
+}
+
+.image {
+    width: 300px;
+}
+
+.text {
+    font-size: 1.5rem;
+}
+
+/* Block styles */
+
+.container {
+    display: flex;
+}
+
+.container__side {
+    width: 50%;
+    padding: 20px;
+}
+
+/* Modifier styles */
+
+.container__side--light {
+    color: black;;
+    background-color: white;
+    text-shadow: 1px 1px 1px greenyellow;
+}
+
+/* ============================================= */
