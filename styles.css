@@ -1,10 +1,11 @@
 /* ==============Dark Side================ */
 
-div {
+#dark {
     background-color: black;
     color: white;
     padding: 20px;
     text-shadow: 1px 1px 1px red;
+    border-radius: 50px;
 }
 
 h2 {
@@ -17,37 +18,33 @@ img {
 
 p {
     font-size: 1.5rem;
-    
+
 }
 
 /* =========================================== */
 
 /* ================Light Side================= */
 
-/* Base styles */
+/* Block styles */
 
-.title {
-    font-size: 3rem;
+.heading {
     text-align: center;
 }
 
-.subtitle {
-    font-size: 2rem;
-}
-
-.image {
+.picture {
     width: 300px;
 }
 
-.text {
+.paragraph {
     font-size: 1.5rem;
 }
 
-/* Block styles */
-
 .container {
     display: flex;
+    max-width: 650px;
 }
+
+/* Element styles */
 
 .container__side {
     width: 50%;
@@ -56,10 +53,41 @@ p {
 
 /* Modifier styles */
 
-.container__side--light {
-    color: black;;
-    background-color: white;
+.heading--large {
+    font-size: 3rem;
+}
+
+.heading--small {
+    font-size: 2rem;
+}
+
+.heading--shadow {
     text-shadow: 1px 1px 1px greenyellow;
 }
 
+.picture--round {
+    border-radius: 50%;
+}
+
+.paragraph--shadow {
+    text-shadow: 1px 1px 1px greenyellow;
+}
+
+.container__side--light {
+    color: black;
+    background-color: lightsteelblue;
+    border-radius: 50px;
+}
+
 /* ============================================= */
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container__side {
+        width: auto;
+    }
+}

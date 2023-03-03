@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>BEM Notation & OOCSS: Writing scaleable CSS</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <title>BEM Notation & OOCSS: Writing scaleable CSS</title>
+    </head>
 
-<body>
-    <h1>BEM Wars</h1>
-    <div class="container">
-        <div>
-            <h2>The Dark Side</h2>
-            <img src="./images/vader.jpeg">
-            <p>Nesting!</p>
-            <p>Conflict!</p>
-            <p>Specificity Wars!</p>
-            <p>Cookies</p>
-        </div>
+    <body>
+        <h1>BEM Wars</h1>
+        <div class="container">
+            <div id="dark">
+                <h2>The Dark Side</h2>
+                <img src="./images/vader.jpeg">
+                <p>Nesting!</p>
+                <p>Conflict!</p>
+                <p>Specificity Wars!</p>
+                <p>Cookies</p>
+            </div>
 
-        <div class="container__side container__side--light">
-            <h2 class="subtitle">The Force</h2>
-            <img src="./images/yoda.jpeg" alt="Yoda" class="image">
-            <p class="text">Love</p>
-            <p class="text">Beauty</p>
-            <p class="text">CSS that Scales!</p>
-            <p class="text">Great warrior. Wars not make one great!</p>
+            <div class="container__side container__side--light">
+                <h2 class="heading heading--small heading--shadow">The Force</h2>
+                <img src="./images/yoda.jpeg" alt="Yoda" class="picture
+                    picture--round">
+                <p class="paragraph paragraph--shadow">Love</p>
+                <p class="paragraph paragraph--shadow">Beauty</p>
+                <p class="paragraph paragraph--shadow">CSS that Scales!</p>
+                <p class="paragraph paragraph--shadow">Great warrior. Wars not
+                    make one great!</p>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 
 </html>
