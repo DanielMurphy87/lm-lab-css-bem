@@ -6,6 +6,7 @@
     padding: 20px;
     text-shadow: 1px 1px 1px red;
     border-radius: 50px;
+    max-width: 650px;
 }
 
 h2 {
@@ -41,7 +42,14 @@ p {
 
 .container {
     display: flex;
-    max-width: 650px;
+    flex-wrap: wrap;
+    max-width:fit-content;
+    justify-content: space-between;
+}
+
+.container>div {
+    flex-basis: calc(20% - 20px);
+    margin: 10px;
 }
 
 /* Element styles */
@@ -88,6 +96,6 @@ p {
     }
 
     .container__side {
-        width: auto;
+        width: 300px;
     }
 }
