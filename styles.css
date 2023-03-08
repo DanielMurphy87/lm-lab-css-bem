@@ -7,6 +7,7 @@
     text-shadow: 1px 1px 1px red;
     border-radius: 50px;
     max-width: 650px;
+    text-align: center;
 }
 
 h2 {
@@ -19,7 +20,16 @@ img {
 
 p {
     font-size: 1.5rem;
+}
 
+#darkButton {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
 /* =========================================== */
@@ -38,13 +48,18 @@ p {
 
 .paragraph {
     font-size: 1.5rem;
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    max-width:fit-content;
-    justify-content: space-between;
+    max-width: fit-content;
 }
 
 .container>div {
@@ -57,6 +72,9 @@ p {
 .container__side {
     width: 50%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Modifier styles */
@@ -85,6 +103,18 @@ p {
     color: black;
     background-color: lightsteelblue;
     border-radius: 50px;
+}
+
+.button__side {
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.button__side--light {
+    background-color: greenyellow;
+    color: black;
 }
 
 /* ============================================= */
